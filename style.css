@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section_Container {
+    max-width: 70%;
+    margin: auto;
+
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header_Logo {
+    width: 30%;
+    margin-bottom: -16px;
+    padding: 10px 0px;
+}
+
+.header_Logo img {}
+
+
+.header_menu {
+    width: 69%;
+    text-align: right;
+}
+
+.mani_Menu {
+    margin-bottom: 0px;
+}
+
+.mani_Menu li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+
+}
+
+
+.mani_Menu li::after {
+    content: "";
+    background: #ca9757;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    transition: 1s;
+}
+
+.mani_Menu li:hover::after {
+    width: 100%;
+}
+
+.first_Dropdown li:hover::after {
+    width: 0;
+
+}
+
+
+.mani_Menu li a {
+    display: inline-block;
+    margin-left: -5px;
+    padding: 10px 20px;
+    line-height: 57px;
+    color: white;
+}
+
+.mani_Menu li:hover a {
+    color: #ca9757;
+}
+
+.first_Dropdown {
+    width: 200px;
+    background: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0px 0px 5px 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: 10;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.mani_Menu li:hover .first_Dropdown {
+    visibility: visible;
+    opacity: 1;
+
+    transform: scaleY(1);
+}
+
+
+
+
+
+.first_Dropdown li {
+    display: block;
+    border-bottom: transparent !important;
+}
+
+
+
+
+
+
+
+
+.first_Dropdown li a {
+    display: block;
+    text-align: center;
+    color: black !important;
+    transition: .5s;
+    margin-left: 0px;
+    padding: 0px !important;
+}
+
+.last_OPt {
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+
+.first_Dropdown li a:hover {
+    background: #bbbaba;
+    color: #ca9757 !important;
+}
+
+nav {
+    background: #000000b3;
+}
+
+.header {
+    width: 92%;
+    margin: auto;
+    z-index: 9999;
+
+
+
+}
+
+header {
+    background-image: url('https://i.ibb.co/938g9H4/ia-200000019.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.banner {
+    padding: 250px 0px;
+    color: white;
+    position: relative;
+    z-index: 9;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+.banner h2::before {
+    content: "";
+    background: #ffffff;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -136px;
+
+}
+
+.banner h2::after {
+    content: "";
+    background: #ffffff;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: -136px;
+
+}
+
+
+.banner h1 {
+    padding: 10px 0px;
+    font-size: 80px;
+}
+
+.banner h2 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.banner a {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px 30px;
+    transition: .5s;
+    background: #ca9757;
+    color: white;
+}
+
+.banner a:hover {
+    color: #ca9757;
+    background: white;
+}
+
+main {
+    background: #f8f8f8;
+}
+
+.service_Section {
+    padding: 100px 0px;
+
+}
+
+
+
+
+.card {
+    background: white;
+    text-align: center;
+    transition: .5s;
+    width: 23%;
+    padding: 35px 0px;
+    margin-right: 35px;
+}
+
+
+.lastcard {
+    margin-right: 0px !important;
+}
+
+.card img {
+    transition: .6s;
+}
+
+.card:hover {
+    background: #cfcecc;
+
+}
+
+.card:hover img {
+    transform: rotatey(360deg);
+
+}
+
+.card:hover a {
+    background: white;
+    color: #ca9757;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 19px;
+    padding: 18px;
+    line-height: 28px;
+}
+
+.card a {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 13px 25px;
+    transition: .5s;
+    background: #ca9757;
+    color: white;
+    margin-top: 15px;
+}
+
+.card a:hover {
+
+    background: black;
+    color: white;
+    transform: translateY(15px);
+
+}
+
+
+
+
+.video_Section {
+    padding: 100px 0px;
+
+}
+
+.left_Side_element {
+    max-width: 49%;
+    margin-right: 20px;
+}
+
+.right_Side_element {
+    max-width: 47%;
+
+}
+
+
+.right_Side_element h2 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.right_Side_element p {
+    color: gray;
+    font-size: 18px;
+    line-height: 1.5em;
+
+}
+
+
+.mainInfo {
+    margin-bottom: 30px;
+}
+
+.right_Side_element a {
+    display: inline-block;
+    padding: 17px 14px;
+    transition: .5s;
+    background: black;
+    color: white;
+    margin-top: 15px;
+}
+
+.right_Side_element a:hover {
+
+    background: #ca9757;
+    color: white;
+
+}
+
+.right_Side_element span {
+    color: #ca9757;
+}
+
+summary {
+    font-size: 20px;
+}
+
+
+.contact_Section {
+    padding: 178px 0px;
+    background-image: url('https://i.postimg.cc/V6QxwPzV/ia-200000022.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+.formContainer {
+    width: 50%;
+}
+
+
+.formContainer h1 {
+    font-size: 40px;
+}
+
+.formContainer p {
+    font-size: 18px;
+    color: #767676;
+    line-height: 29px;
+    padding: 25px 0px;
+}
+
+.input_Field {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+
+}
+
+
+.subBtn {}
+
+
+.subBtn {
+    display: inline-block;
+    padding: 17px 30px;
+    transition: .5s;
+    background: #ca9757;
+    color: white;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+footer {
+    background: #6d6d6d;
+    color: white;
+    padding: 40px 100px;
+
+}
+
+footer ul {
+    width: 48%;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
